@@ -1,8 +1,11 @@
 function generateQRCode() {
 	var data = document.getElementById("data").value
-	eel.generate_qr(data)(setImage)
+	var newData = document.getElementById("newbox");
+	var finalData = eel.getWeather(data)
+	newData.value = finalData;
+
 }
 
-function setImage(base64) {
-	document.getElementById("qr").src = base64
+function setimage(info){
+	//prompt("the temperature is" +info)
 }

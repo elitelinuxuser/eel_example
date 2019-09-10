@@ -9,7 +9,7 @@
     <title>QR Code Generator</title>
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="/eel.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="new.js"></script>
     
 </head>
 
@@ -21,14 +21,17 @@
                     <div class="wellcome-heading">
                         <h2>Code Generator</h2>
                         <h3>QR</h3>
-                        <p>Turn any piece of text into a QR code.</p>
+                        <p id="newbox">Hey you</p>
+                        <p>Turn any piece of text into a QR.</p>
                     </div>
                     <div class="get-start-area">
                         <form class="form-inline">
-                            <input type="text" id="data" class="form-control email" placeholder="Enter text">
-                            <input type="button" class="submit" value="Get QR Code" onclick="generateQRCode()">
+                            <input type="text" id="data" class="form-control email" placeholder="Enter city">
+                            <input type="button" class="submit" value="Get Weather" onclick="setUser()">
                         </form>
                     </div>
+            
+
                 </div>
             </div>
         </div>
